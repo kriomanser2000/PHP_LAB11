@@ -22,7 +22,7 @@ class Menu
         echo "<ul style='list-style: none; padding: 0; margin: 0;'>";
         foreach ($this->listItems as $item)
         {
-            echo "<li style='background-color: #33acff; width: 200px; height: 70px; float: left; margin-right: 10px;'>";
+            echo "<li style='background-color: #33acff; width: 300px; height: 70px; float: left; margin-right: 10px;'>";
             echo "<a href='{$item->url}' style='display: block; height: 100%; text-decoration: none;'>";
             echo "<p style='color: blue; margin: 0; padding-left: 30%; font-size: 30px; padding-top: 20px;'>{$item->name}</p>";
             echo "</a>";
@@ -32,9 +32,9 @@ class Menu
     }
 }
 $menu = new Menu();
-$menu->AddMenuItem("Home", "1.php");
-$menu->AddMenuItem("About", "2.php");
-$menu->AddMenuItem("Photo", "3.php");
-$menu->AddMenuItem("Contact Us", "4.php");
-$menu->AddMenuItem("Login", "5.php");
+$menu->AddMenuItem("Home", "menuHome.php");
+$menu->AddMenuItem("About", "menuAbout.php");
+$menu->AddMenuItem("Photo", "menuPhoto.php");
+$menu->AddMenuItem("Contact Us", "menuContact.php");
+$menu->AddMenuItem("Login", "menuLogin.php");
 $menu->PrintMenu(300, 400, "#f4f4f4", "#333333");
